@@ -1,6 +1,6 @@
 @page {
     size: A4;
-    margin: 0mm 0mm;
+    margin: 0;
 }
 
 body {
@@ -9,36 +9,28 @@ body {
     font-family: "Raleway", Arial, sans-serif;
     font-size: 10pt;
     font-weight: normal;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 .container {
-    margin: 1.5cm;
-    margin-left: 2cm;
+    margin: 1.5cm 2cm 1.5cm 2cm;
     box-sizing: border-box;
     display: inline;
     line-height: 1;
     color: black;
 }
 
-.splitColumn {
-    display: grid;
-    padding: 0;
-    margin-right: 1.5cm;
-    margin-left: 2cm;
-    grid-template-columns: 2.7cm auto;
-    margin-top: 1.5mm;
-    margin-bottom: 0.5mm;
-}
+.splitColumn,
 .splitColumn2 {
     display: grid;
-    padding: 0;
-    margin-right: 1.5cm;
-    margin-left: 2cm;
     grid-template-columns: 2.7cm auto;
+    margin: 1.5mm 2cm 0.5mm 2cm;
+    padding: 0;
+}
+
+.splitColumn2 {
     margin-top: 0.5mm;
-    margin-bottom: 0.5mm;
 }
 
 .threeColTable {
@@ -52,30 +44,27 @@ body {
     line-height: 1.3;
     margin-bottom: 2mm;
     text-align: justify;
-
 }
 
 .twoColTable {
-    padding-left: 1.5em;
     display: grid;
     grid-template-columns: 5.9cm auto;
     color: #4c4c4c;
+    padding-left: 1.5em;
 }
 
 .header {
     position: relative;
-    margin-top: 1.5cm;
-    margin-right: 1.5cm;
-    margin-left: 2cm;
-    line-height: 1.2;
     display: grid;
     grid-template-columns: auto auto;
+    margin: 1.5cm 1.5cm 0 2cm;
+    line-height: 1.2;
     padding-bottom: 3mm;
 }
 
 #experience,
 #education {
-    padding-top: 0cm;
+    padding-top: 0;
 }
 
 .leftColumn {
@@ -100,42 +89,42 @@ body {
 
 #jobPlace {
     text-align: right;
-    padding-bottom: 0em;
+    padding-bottom: 0;
 }
 
 .items {
-    padding-bottom: 0em;
+    padding-bottom: 0;
 }
 
 .job > div.items {
-    margin-top: 0em;
+    margin-top: 0;
 }
 
 .items p {
+    display: inline;
     background-color: #e4e4e4;
-    padding: 0.1cm 0.2cm 0.1cm 0.2cm;
+    padding: 0.1cm 0.2cm;
     font-size: 9pt;
     line-height: 2.2;
-    display: inline;
 }
+
+.items p.category {
+    background-color: white;
+}
+
 .educationTitle {
     display: grid;
     grid-template-columns: auto auto;
 }
 
-.phd {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
+.phd,
 .container p {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
 }
 
 .address {
     display: none;
-    padding-top: 0em;
+    padding-top: 0;
 }
 
 .address p {
@@ -151,8 +140,8 @@ body {
 
 .secName {
     font-size: 17pt;
-    border-left: 1px solid black;
     text-align: center;
+    border-left: 1px solid black;
 }
 
 #title {
@@ -161,14 +150,14 @@ body {
     font-weight: bold;
     color: blue;
     text-align: center;
-    padding: 5px 0 5px 0;
+    padding: 5px 0;
 }
 
 .sections {
     font-family: "Raleway", Arial, sans-serif;
+    font-size: 10pt;
     font-weight: bold;
     text-align: right;
-    font-size: 10pt;
     color: blue;
 }
 
@@ -189,44 +178,28 @@ body {
     color: blue;
     text-decoration: none;
 }
-.icons {
-    text-decoration: none;
-}
 
+.icons,
 a {
-    color: black;
     text-decoration: none;
+    color: black;
 }
 
 .yearRange {
     text-align: right;
     padding-right: 0.3cm;
 }
+
 ul {
-    margin: 0;
+    margin: 1mm 0;
     padding: 0;
     list-style-type: none;
     line-height: 1.3;
-    margin-top: 1mm;
-    margin-bottom: 1mm;
 }
+
 ul li:before {
     content: "-";
     margin-right: 0.3em;
-}
-
-#motivation {
-    line-height: 1.3;
-    color: #4c4c4c;
-    font-size: 9pt;
-}
-
-#motivation p {
-    font-size: 9pt;
-}
-
-.items p.category {
-    background-color: white;
 }
 
 #otherActivities {
@@ -243,12 +216,10 @@ ul li:before {
 }
 
 .intro {
-    margin-left: 2cm;
-    margin-right: 1.5cm;
+    margin: 0 1.5cm 0 2cm;
+    padding-left: 0.5cm;
     text-align: justify;
     font-weight: lighter;
-    padding-left: 0.5cm;
-    padding-bottom: 0cm;
     line-height: 1.3;
     color: #4c4c4c;
 }
