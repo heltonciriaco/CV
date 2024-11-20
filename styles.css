@@ -11,46 +11,21 @@ body {
     font-weight: normal;
     margin: 0;
     padding: 0;
+    &  p {    
+        margin: 0mm;
+    }
 }
 
 .container {
-    margin: 1.5cm 2cm 1.5cm 2cm;
     box-sizing: border-box;
     display: inline;
     line-height: 1;
     color: black;
-}
-
-.splitColumn,
-.splitColumn2 {
-    display: grid;
-    grid-template-columns: 2.7cm auto;
-    margin: 1.5mm 2cm 0.5mm 2cm;
-    padding: 0;
-}
-
-.splitColumn2 {
-    margin-top: 0.5mm;
-}
-
-.threeColTable {
-    display: grid;
-    grid-template-columns: 3cm 5.5cm auto;
-    color: #4c4c4c;
-}
-
-.jobDescription {
-    color: #4c4c4c;
-    line-height: 1.3;
-    margin-bottom: 2mm;
-    text-align: justify;
-}
-
-.twoColTable {
-    display: grid;
-    grid-template-columns: 5.9cm auto;
-    color: #4c4c4c;
-    padding-left: 1.5em;
+    & .icons,
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .header {
@@ -60,159 +35,30 @@ body {
     margin: 1.5cm 1.5cm 0 2cm;
     line-height: 1.2;
     padding-bottom: 3mm;
-}
 
-#experience,
-#education {
-    padding-top: 0;
-}
+    & #mainName {
+        font-size: 20pt;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    & #title {
+        font-family: "Raleway", Arial, sans-serif;
+        font-size: 11pt;
+        font-weight: bold;
+        color: blue;
+        text-align: center;
+        padding: 5px 0;
+    }
 
-.leftColumn {
-    text-align: right;
-    color: blue;
-    padding-right: 0.3cm;
-    font-weight: bold;
-}
-
-.job {
-    text-align: left;
-}
-
-.job p {
-    display: inline;
-    line-height: 1.2;
-}
-
-#jobTitle {
-    font-weight: bold;
-}
-
-#jobPlace {
-    text-align: right;
-    padding-bottom: 0;
-}
-
-.items {
-    padding-bottom: 0;
-}
-
-.job > div.items {
-    margin-top: 0;
-}
-
-.items p {
-    display: inline;
-    background-color: #e4e4e4;
-    padding: 0.1cm 0.2cm;
-    font-size: 9pt;
-    line-height: 2.2;
-}
-
-.items p.category {
-    background-color: white;
-}
-
-.educationTitle {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.phd,
-.container p {
-    margin: 0;
-}
-
-.address {
-    display: none;
-    padding-top: 0;
-}
-
-.address p {
-    display: inline;
-    padding-left: 0.5em;
-}
-
-#mainName {
-    font-size: 20pt;
-    font-weight: bold;
-    text-align: center;
-}
-
-.secName {
-    font-size: 17pt;
-    text-align: center;
-    border-left: 1px solid black;
-}
-
-#title {
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 11pt;
-    font-weight: bold;
-    color: blue;
-    text-align: center;
-    padding: 5px 0;
-}
-
-.sections {
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 10pt;
-    font-weight: bold;
-    text-align: right;
-    color: blue;
-}
-
-.rightColumn {
-    font-size: 10pt;
-    font-weight: lighter;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.contact {
-    position: absolute;
-    right: 0;
-    text-align: center;
-}
-
-.phone {
-    color: blue;
-    text-decoration: none;
-}
-
-.icons,
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.yearRange {
-    text-align: right;
-    padding-right: 0.3cm;
-}
-
-ul {
-    margin: 1mm 0;
-    padding: 0;
-    list-style-type: none;
-    line-height: 1.3;
-}
-
-ul li:before {
-    content: "-";
-    margin-right: 0.3em;
-}
-
-#otherActivities {
-    position: relative;
-    border-left: none;
-}
-
-.jobPosition {
-    font-weight: bold;
-}
-
-#otherActivities p {
-    display: inline;
+    & .contact {
+        position: absolute;
+        right: 0;
+        text-align: center;
+    
+        & .actPosition, .phone {color: blue}
+    }
+    
 }
 
 .intro {
@@ -222,4 +68,112 @@ ul li:before {
     font-weight: lighter;
     line-height: 1.3;
     color: #4c4c4c;
+}
+
+.splitColumn {
+    display: grid;
+    grid-template-columns: 2.7cm auto;
+    margin: 1.5mm 2cm 0.5mm 2cm;
+    padding: 0;
+}
+
+.twoColTable {
+    display: grid;
+    grid-template-columns: 5.9cm auto;
+    color: #4c4c4c;
+    padding-left: 1.5em;
+}
+.threeColTable {
+    display: grid;
+    grid-template-columns: 3cm 5.5cm auto;
+    color: #4c4c4c;
+}
+
+.leftColumn {
+    text-align: right;
+    color: blue;
+    padding-right: 0.3cm;
+    font-weight: bold;
+}
+
+.rightColumn {
+    font-size: 10pt;
+    font-weight: lighter;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.yearRange {
+    text-align: right;
+    padding-right: 0.3cm;
+}
+
+
+.job { 
+    & .jobDescription {
+        color: #4c4c4c;
+        line-height: 1.3;
+        margin-bottom: 2mm;
+        text-align: justify;
+    }
+
+    & p {
+    display: inline;
+    line-height: 1.2;
+    }
+
+    & #jobTitle {
+        font-weight: bold;
+    }
+
+    & #jobPlace {
+        text-align: right;
+        padding-bottom: 0;
+    }
+
+    & > div.items {
+        margin-top: 0;
+    }
+}
+
+.actPosition {
+    font-weight: bold;
+}
+
+.items {
+    padding-bottom: 0;
+
+    &  p {
+        display: inline;
+        background-color: #e4e4e4;
+        padding: 0.1cm 0.2cm;
+        font-size: 9pt;
+        line-height: 2.2;
+    }
+
+    & p.category {
+        background-color: white;
+    }
+    
+}
+
+.educationTitle {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+ul {
+    margin: 1mm 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 1.3;
+    & li:before {
+        content: "-";
+        margin-right: 0.3em;
+    }
+}
+
+#otherActivities p{
+    display: inline;
 }
